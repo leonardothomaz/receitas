@@ -1,0 +1,11 @@
+{
+  "receitas": [
+    {
+      "email": "leonardo@thomaz",
+      "tipoReceita": "1",
+      "modoPreparo": "primeiro da um abraço dps chora",
+      "ingredientes": "agua sal e limão",
+      "id": 1
+    }
+  ]
+}

@@ -17,7 +17,7 @@ export default class Contato extends Component {
                             <h6>RA: 2003325</h6>
                             <h6>Francisco Beltrão, 85.603-750, PR</h6>
                             <h6>Engenharia de Software - UTFPR-DV, 5º Periodo.</h6>
-                        </div>
+                        </div> 
                         <div className="text-center">
                             <a href={'https://www.linkedin.com/in/leonardo-thomaz-rocha/'} target="_blank">
                                 <i className="fab fa-linkedin fa-2x"></i>
