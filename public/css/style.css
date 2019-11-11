@@ -33,6 +33,8 @@
 .molduradiv {
     width: 80%;
     padding-left: 20%;
+    min-height: 571px;
+    height: 80vh;
 }
 
 .img {

@@ -50,7 +50,7 @@ export default class NovaReceita extends Component {
                         <div className="input-group">
                             <div clasNames="custom-file">
                                 <input type="file" className="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" />
-                                <label className="custom-file-label" for="inputGroupFile04">Selecione a Imagem </label>
+                                <label className="custom-file-label">Selecione a Imagem </label>
                             </div>
                         </div>
                     </div>
