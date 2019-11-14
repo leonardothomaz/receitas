@@ -48,7 +48,7 @@
 }
 
 .radius {
-    border-radius: 130px !important;
+    border-radius: 200px !important;
 }
 
 .paddingLeft {
@@ -62,4 +62,13 @@
 .space {
     padding-top: 35px;
     color: transparent;
+}
+
+.moldura {
+    margin-left: 25% !important;
+}
+
+.molduradiv1 {
+    width: 80% !important;
+    padding-left: 20% !important;
 }

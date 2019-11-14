@@ -14,8 +14,8 @@ export default class Header extends Component {
                     <div className="btn-toolbar" role="toolbar">
                         <div className="btn-group mr-2" role="group">
                             <Link to='/'><button type="button" className="btn btn-primary">Home</button></Link>
-                            <button type="button" className="btn btn-primary">Receitas Doces</button>
-                            <button type="button" className="btn btn-primary">Receitas Salgadas</button>
+                            <Link to='/doce'><button type="button" className="btn btn-primary">Receitas Doces</button></Link>
+                            <Link to='/salgada'><button type="button" className="btn btn-primary">Receitas Salgadas</button></Link>
                             <Link to='/newReceita'><button type="button" className="btn btn-primary">Nova Receitas</button></Link>
                             <Link to='/contato'><button type="button" className="btn btn-primary">Contato</button></Link>
                         </div>

@@ -1,11 +1,26 @@
 {
   "receitas": [
     {
-      "email": "leonardo@thomaz",
+      "email": "leonardo.thomaz@gmail.com",
       "tipoReceita": "1",
-      "modoPreparo": "primeiro da um abraço dps chora",
-      "ingredientes": "agua sal e limão",
+      "autor": "Leonard.",
+      "prato": "Sabão cra cra",
+      "descricao": "usado para não deixar os cabelo do saco enrolar",
+      "modoPreparo": "misture o alcool e o detergente com um graveto ",
+      "ingredientes": "* Alcool\n* Detergente\n* Graveto",
+      "imagem": "QzpcZmFrZXBhdGhcVXhPM0V1MC5qcGc=",
       "id": 1
+    },
+    {
+      "email": "jdsbjgiaklds@fdjskbalfas",
+      "tipoReceita": "1",
+      "autor": "f41edw8",
+      "prato": "dfs564d5w6q4d6wq",
+      "descricao": "45dws4fwe",
+      "modoPreparo": "4f5s4f56we",
+      "ingredientes": "f5ws4f5w6e",
+      "imagem": "QzpcZmFrZXBhdGhcdW0taG9tZW0tZGFzLWNhdmVybmFzLnBuZw==",
+      "id": 2
     }
   ]
 }
