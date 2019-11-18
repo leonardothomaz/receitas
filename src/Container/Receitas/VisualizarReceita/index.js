@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Apis from './../../../Service/Api';
+import Apis from '../../../Service/Api';
 
 export default class Visualizar extends Component {
     constructor(props) {

@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 import Apis from '../../Service/Api.js'
 
 export default class NovaReceita extends Component {
+
     constructor(props) {
         super(props)
         this.salvarReceita = this.salvarReceita.bind(this)
+        this.state = {
+            src: '',
+            name: ''
+        }
     }
 
     salvarReceita() {
-        console.log(this.refs.imagem.value);
-
-        let teste = btoa(this.refs.imagem.value);
-        console.log(teste);
         const NovoLivro = {
             email: this.refs.email.value,
             tipoReceita: this.refs.tipoReceita.value,
@@ -20,7 +21,7 @@ export default class NovaReceita extends Component {
             descricao: this.refs.descricao.value,
             modoPreparo: this.refs.modoPreparo.value,
             ingredientes: this.refs.ingrediente.value,
-            imagem: btoa(this.refs.imagem.value)
+            imagem: this.state.src
         }
         let form = document.getElementById('formNovaReceita')
         if (form.checkValidity()) {
@@ -29,6 +30,28 @@ export default class NovaReceita extends Component {
             })
         }
 
+    }
+
+    selecionarImagem = evt => {
+        var files = evt.target.files;
+
+        for (var i = 0, f; f = files[i]; i++) {
+
+            if (!f.type.match('image.*')) {
+                continue;
+            }
+
+            var reader = new FileReader();
+
+            // Closure to capture the file information.
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    this.setState({ src: e.target.result, name: escape(theFile.name) });
+                };
+            })(f).bind(this);
+
+            reader.readAsDataURL(f);
+        }
     }
 
     render() {
@@ -71,7 +94,8 @@ export default class NovaReceita extends Component {
                     <div className="form-group">
                         <div className="input-group">
                             <label className="custom-file-label">Selecione a Imagem </label>
-                            <input ref="imagem" type="file" className="custom-file-input" accept=".jpg,.jpeg,.png" required />
+                            <input ref="imagem" type="file" className="custom-file-input" accept=".jpg,.jpeg,.png" onChange={this.selecionarImagem} required />
+                            <img className="thumb" src={this.state.src} title={this.state.name} />
                         </div>
                     </div>
                     <div className="form-group">
