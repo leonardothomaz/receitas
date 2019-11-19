@@ -95,7 +95,7 @@ export default class NovaReceita extends Component {
                         <div className="input-group">
                             <label className="custom-file-label">Selecione a Imagem </label>
                             <input ref="imagem" type="file" className="custom-file-input" accept=".jpg,.jpeg,.png" onChange={this.selecionarImagem} required />
-                            <img className="thumb" src={this.state.src} title={this.state.name} />
+                            <img className="thumb mx-auto d-block img-fluid mt-3" src={this.state.src} title={this.state.name} />
                         </div>
                     </div>
                     <div className="form-group">

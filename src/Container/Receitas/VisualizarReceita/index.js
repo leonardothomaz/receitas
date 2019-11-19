@@ -20,10 +20,10 @@ export default class Visualizar extends Component {
 
     render() {
         return (
-            <div>
+            <div className="moldura">
                 <br />
-                <div className="card shadow-lg p-3 mb-5 bg-white rounded">
-                    <img src="..." className="card-img-top" alt="..." />
+                <div className="card shadow-lg w-75 p-3 mb-5 bg-white rounded">
+                    <img src={this.state.Receitas.imagem} className="card-img-top mx-auto d-block img-fluid" />
                     <div className="card-body">
                         <h3 className="card-title text-center">{this.state.Receitas.prato}</h3>
                         <h6 className="card-text text-center">{this.state.Receitas.descricao}</h6>
@@ -40,7 +40,7 @@ export default class Visualizar extends Component {
                                 <p className="card-text">{this.state.Receitas.modoPreparo}</p>
                             </div>
                         </div>
-                        <p className="card-text text-center"><small className="text-muted">Autor: {this.state.Receitas.autor}</small></p>
+                        <p className="card-text text-center"><small className="text-muted">Autor: {this.state.Receitas.autor} - {this.state.Receitas.email}</small></p>
                     </div>
                 </div>
             </div>

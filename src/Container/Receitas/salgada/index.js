@@ -21,9 +21,9 @@ export default class Salgada extends Component {
     renderReceitas(Receita) {
         return (
             <div className="moldura card w-50 shadow-lg p-3 mb-5 bg-white rounded">
-                <img src="..." className="card-img-top" alt="..." />
+                <img src={Receita.imagem} className="card-img-top rounded"/>
                 <div className="card-body">
-                    <h5 className="card-title">{Receita.prato}</h5>
+                    <h5 className="card-title text-center">{Receita.prato}</h5>
                     <p className="card-text">{Receita.descricao}</p>
                     <div className="text-center">
                         <Link to={`/receita/${Receita.id}`}><button type="button" className="btn btn-primary">Ir para a receita</button></Link>
