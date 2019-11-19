@@ -14,7 +14,6 @@ export default class Visualizar extends Component {
         Apis.loadReceitasById(this.props.match.params.receitaId).then((res) => {
 
             this.setState({ Receitas: res.data[0] })
-            console.log(this.state.Receitas)
         })
     }
 
